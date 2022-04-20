@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  gateway:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - '7777:7777'
