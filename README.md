@@ -4,8 +4,8 @@ This is a very basic Docker image to simplify running a Storj S3 Gateway node on
 
 ## Run the S3 gateway
 
-1. Setup a Storj account, and generate an 'Access Grant' from the 'Access' section of the Satellite dashboard.
-2. Using the example SDL below, replace the ACCESS_GRANT environment variable with the grant obtained in the previous step.
+1. Setup a Storj account, and generate an 'Access Grant' from the 'Access' section of the Satellite dashboard. This is location specific, e.g. [eu1.storj.io/access-grants](https://eu1.storj.io/access-grants)
+2. Using the example SDL below, replace the `ACCESS_GRANT` environment variable with the grant obtained in the previous step.
 3. Deploy the SDL on Akash, check the logs and grab your S3 Access and Secret keys. You will also need the provider URL and randomly generated port shown in the deploy info.
 
 ```yml
@@ -50,6 +50,8 @@ deployment:
       profile: node
       count: 1
 ```
+
+You can now visit the URL provided by Akash in a web browser, which will prompt you for the access key and secret to access the gateway UI.
 
 ## Configure AWS CLI
 
