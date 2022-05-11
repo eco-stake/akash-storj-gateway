@@ -14,7 +14,7 @@ version: "2.0"
 
 services:
   node:
-    image: ghcr.io/ovrclk/akash-storj-gateway
+    image: ghcr.io/ovrclk/akash-storj-gateway:v0.0.1
     env: 
       - ACCESS_GRANT=<grant-key>
     expose:
